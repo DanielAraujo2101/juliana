@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha Conta - Fine Perfumery</title>
+    <link rel="stylesheet" href="index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container header-main">
+            <div class="logo">FINE PERFUMERY</div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="colecoes.html">Coleções</a></li>
+                    <li><a href="favritos.html">Favoritos</a></li>
+                    <li><a href="about.html">Sobre Fragrâncias</a></li>
+                    <li><a href="locais.html">Locais</a></li>
+                    <li><a href="conta.html" class="active">Conta</a></li>
+                    <li><a href="news.html">Novidades</a></li>
+                </ul>
+            </nav>
+            <div class="header-icons">
+                <a href="#"><i class="fas fa-search"></i></a>
+                <a href="#"><i class="fas fa-shopping-bag"></i></a>
+                <a href="#"><i class="fas fa-user"></i></a>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Minha Conta</h1>
+            <p>Gerencie suas informações e preferências.</p>
+        </div>
+    </section>
+
+    <section class="account container">
+        <div class="account-layout">
+            <div class="account-sidebar">
+                <div class="user-profile">
+                    <div class="user-avatar">
+                        <i class="fas fa-user-circle"></i>
+                    </div>
+                    <h3>Maria Silva</h3>
+                    <p>mariaclarasilva@email.com</p>
+                </div>
+                <nav class="account-nav">
+                    <ul>
+                        <li><a href="#perfil" class="active"><i class="fas fa-user"></i> Meu Perfil</a></li>
+                        <li><a href="#pedidos"><i class="fas fa-shopping-bag"></i> Meus Pedidos</a></li>
+                        <li><a href="#favoritos"><i class="fas fa-heart"></i> Favoritos</a></li>
+                        <li><a href="#enderecos"><i class="fas fa-map-marker-alt"></i> Endereços</a></li>
+                        <li><a href="#seguranca"><i class="fas fa-lock"></i> Segurança</a></li>
+                        <li><a href="#preferencias"><i class="fas fa-cog"></i> Preferências</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="account-content">
+                <div id="perfil" class="account-section active">
+                    <h2>Meu Perfil</h2>
+                    <form class="profile-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label>Nome Completo</label>
+                                <input type="text" value="Maria Clara Silva">
+                            </div>
+                            <div class="form-group">
+                                <label>E-mail</label>
+                                <input type="email" value="mariaclarasilva@email.com">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label>Telefone</label>
+                                <input type="tel" value="(11) 98765-4321">
+                            </div>
+                            <div class="form-group">
+                                <label>Data de Nascimento</label>
+                                <input type="date" value="1990-05-15">
+                            </div>
+                        </div>
+                        <button type="submit" class="btn">Salvar Alterações</button>
+                    </form>
+                </div>
+
+                <div id="pedidos" class="account-section">
+                    <h2>Meus Pedidos</h2>
+                    <div class="orders-list">
+                        <div class="order-card">
+                            <div class="order-header">
+                                <span class="order-number">#FP202400123</span>
+                                <span class="order-date">15 Jan 2024</span>
+                                <span class="order-status delivered">Entregue</span>
+                            </div>
+                            <div class="order-items">
+                                <div class="order-item">
+                                    <img src="perfume1semfundo.png" alt="Golden Amber">
+                                    <div class="item-info">
+                                        <h4>Golden Amber</h4>
+                                        <p>100ml</p>
+                                    </div>
+                                    <div class="item-price">$145.00</div>
+                                </div>
+                            </div>
+                            <div class="order-total">
+                                Total: $145.00
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="preferencias" class="account-section">
+                    <h2>Preferências Olfativas</h2>
+                    <div class="preferences-form">
+                        <h4>Famílias Olfativas Preferidas</h4>
+                        <div class="preference-options">
+                            <label class="preference-option">
+                                <input type="checkbox" checked>
+                                <span class="checkmark"></span>
+                                Floral
+                            </label>
+                            <label class="preference-option">
+                                <input type="checkbox" checked>
+                                <span class="checkmark"></span>
+                                Amadeirado
+                            </label>
+                            <label class="preference-option">
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                                Oriental
+                            </label>
+                            <label class="preference-option">
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                                Cítrico
+                            </label>
+                        </div>
+                        <button type="submit" class="btn">Salvar Preferências</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <!-- Footer igual ao da página inicial -->
+    </footer>
+</body>
+</html>

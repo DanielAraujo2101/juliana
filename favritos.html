@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Favoritos - Fine Perfumery</title>
+    <link rel="stylesheet" href="index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container header-main">
+            <div class="logo">FINE PERFUMERY</div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="colecoes.html">Coleções</a></li>
+                    <li><a href="favritos.html" class="active">Favoritos</a></li>
+                    <li><a href="about.html">Sobre Fragrâncias</a></li>
+                    <li><a href="locais.html">Locais</a></li>
+                    <li><a href="conta.html">Conta</a></li>
+                    <li><a href="news.html">Novidades</a></li>
+                </ul>
+            </nav>
+            <div class="header-icons">
+                <a href="#"><i class="fas fa-search"></i></a>
+                <a href="#"><i class="fas fa-shopping-bag"></i></a>
+                <a href="#"><i class="fas fa-user"></i></a>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Seus Favoritos</h1>
+            <p>Guarde as fragrâncias que conquistaram seu coração.</p>
+        </div>
+    </section>
+
+    <section class="favorites container">
+        <div class="favorites-header">
+            <h2 class="section-title">Meus Favoritos</h2>
+            <div class="favorites-count">
+                <span>3 itens</span>
+            </div>
+        </div>
+        
+        <div class="favorites-grid">
+            <div class="favorite-item">
+                <div class="product-img">
+                    <img src="perfume1semfundo.png" style="height: 150px;" alt="Golden Amber">
+                </div>
+                <div class="product-info">
+                    <h3>Golden Amber</h3>
+                    <p>$145.00</p>
+                    <div class="favorite-actions">
+                        <a href="#" class="btn">Adicionar ao Carrinho</a>
+                        <button class="remove-favorite"><i class="fas fa-heart-broken"></i> Remover</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="favorite-item">
+                <div class="product-img">
+                    <img src="perfume2semfundo.png" style="height: 150px;" alt="Velvet Rose">
+                </div>
+                <div class="product-info">
+                    <h3>Velvet Rose</h3>
+                    <p>$135.00</p>
+                    <div class="favorite-actions">
+                        <a href="#" class="btn">Adicionar ao Carrinho</a>
+                        <button class="remove-favorite"><i class="fas fa-heart-broken"></i> Remover</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="favorite-item">
+                <div class="product-img">
+                    <img src="perfume4.png" style="height: 190px;" alt="Ocean Mist">
+                </div>
+                <div class="product-info">
+                    <h3>Ocean Mist</h3>
+                    <p>$115.00</p>
+                    <div class="favorite-actions">
+                        <a href="#" class="btn">Adicionar ao Carrinho</a>
+                        <button class="remove-favorite"><i class="fas fa-heart-broken"></i> Remover</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="favorites-empty" style="display: none;">
+            <div class="empty-state">
+                <i class="fas fa-heart" style="font-size: 48px; color: #8a5d3b; margin-bottom: 20px;"></i>
+                <h3>Seus favoritos estão vazios</h3>
+                <p>Adicione fragrâncias aos seus favoritos para encontrá-las facilmente depois.</p>
+                <a href="colecoes.html" class="btn">Explorar Coleções</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <!-- Footer igual ao da página inicial -->
+    </footer>
+</body>
+</html>
